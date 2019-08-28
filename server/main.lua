@@ -33,7 +33,7 @@ end
 
   TriggerEvent('es:addCommand', 'do', function(source, args, user)
       local name = getIdentity(source)
-      TriggerClientEvent("sendProximityMessageDo", -1, source, name.firstname, table.concat(args, " "))
+      TriggerClientEvent("sendProximityMessageDo", -1, source, {162, 35, 29}, table.concat(args, " "))
   end)
 
   TriggerEvent('es:addCommand', 'tweet', function(source, args, user)
@@ -41,7 +41,7 @@ end
   end, {help = 'Send a tweet. [IC]'})
 
   TriggerEvent('es:addCommand', 'anon', function(source, args, user)
-	TriggerClientEvent('chatMessage', -1, "^0[^4Twitter^0] (^5@" "anonimo" "^0)", {30, 144, 255}, table.concat(args, " "))
+	TriggerClientEvent('chatMessage', -1, "^0[^4Twitter^0] (^5@" "Anonimo" "^0)", {30, 144, 255}, table.concat(args, " "))
   end, {help = 'Send a tweet. [IC]'})
 
   TriggerEvent('es:addCommand', 'ooc', function(source, args, user)
@@ -49,19 +49,19 @@ end
   end, {help = 'Send an out of character message to the whole server.'})
 
     TriggerEvent('es:addCommand', 'news', function(source, args, user)
-  	TriggerClientEvent('chatMessage', -1, "^0[^2Weazel_News^0] (^5@" .. GetPlayerName(source) .. "^0)", {30, 144, 255}, table.concat(args, " "))
+  	TriggerClientEvent('chatMessage', -1, "^0[^2Weazel_News^0] (^5@" .. GetPlayerName(source) .. "^0)", {238, 19, 19}, table.concat(args, " "))
   end, {help = ' [IC]'}) 
   
      TriggerEvent('es:addCommand', 'wanted', function(source, args, user)
-  	TriggerClientEvent('chatMessage', -1, "^0[^5Wanted^0] (^5@" .. GetPlayerName(source) .. "^0)", {30, 144, 255}, table.concat(args, " "))
+  	TriggerClientEvent('chatMessage', -1, "^0[^5Wanted^0] (^5@" .. GetPlayerName(source) .. "^0)", {36, 93, 35}, table.concat(args, " "))
   end, {help = ' [IC]'})
   
      TriggerEvent('es:addCommand', 'darkweb', function(source, args, user)
-  	TriggerClientEvent('chatMessage', -1, "^0[^2Darkweb^0] (^5@" .. GetPlayerName(source) .. "^0)", {30, 144, 255}, table.concat(args, " "))
+  	TriggerClientEvent('chatMessage', -1, "^0[^2Darkweb^0] (^5@" .. GetPlayerName(source) .. "^0)", {45, 57, 45}, table.concat(args, " "))
   end, {help = 'Wyslij darka [IC]'})
   
      TriggerEvent('es:addCommand', 'ad', function(source, args, user)
-  	TriggerClientEvent('chatMessage', -1, "^0[^3Warning^0] (^5@" .. GetPlayerName(source) .. "^0)", {30, 144, 255}, table.concat(args, " "))
+  	TriggerClientEvent('chatMessage', -1, "^0[^3Warning^0] (^5@" .. GetPlayerName(source) .. "^0)", {255, 124, 0}, table.concat(args, " "))
   end, {help = ' [OOC]'})
   
 function stringsplit(inputstr, sep)
