@@ -57,11 +57,11 @@ end
   end, {help = ' [IC]'})
   
      TriggerEvent('es:addCommand', 'darkweb', function(source, args, user)
-  	TriggerClientEvent('chatMessage', -1, "^0[^2Darkweb^0] (^5@" .. GetPlayerName(source) .. "^0)", {45, 57, 45}, table.concat(args, " "))
+  	TriggerClientEvent('chatMessage', -1, "^0[^2Darkweb^0] (^5@" .. "sdgas#xdas$" .. "^0)", {45, 57, 45}, table.concat(args, " "))
   end, {help = 'Wyslij darka [IC]'})
   
      TriggerEvent('es:addCommand', 'ad', function(source, args, user)
-  	TriggerClientEvent('chatMessage', -1, "^0[^3Warning^0] (^5@" .. GetPlayerName(source) .. "^0)", {255, 124, 0}, table.concat(args, " "))
+  	TriggerClientEvent('chatMessage', -1, "^0[^3Warning^0] (^5@" .. "Servidor" .. "^0)", {255, 124, 0}, table.concat(args, " "))
   end, {help = ' [OOC]'})
   
 function stringsplit(inputstr, sep)
